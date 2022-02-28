@@ -1,0 +1,75 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1300&q=110") ; 
+    height: 100%;
+    width: 120px;
+    overflow: hidden;
+
+}
+.contain{
+    width: 40%;
+    min-width: 450px;
+    position:absolute;
+    transform: translate(-50% -50%);
+    left: 28%;
+    top: 25%; 
+    padding:50px 30px;
+}
+.contain *{
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.inputs-wrapper{
+    background-color: #08080808;
+    padding: 30px 25px;
+    border-radius: 60px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+input,
+button{
+    height: 50px;
+    background-color: white;
+    color: #20141408;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    width: 60%;
+    padding:0 20px;
+    font-size: 14px;
+    color:black;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width: 30%;
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.outputs-wrapper div{
+    height: 100px;
+    width: 100px;
+    background-color: #eea7a76b;
+    border-radius: 52px;
+    color: black;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+}
