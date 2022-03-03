@@ -16,19 +16,19 @@ function ageCalculate(){
         let currentMonth = today.getMonth()+1;
         let currentDate = today.getDate();
             leapCheck(currentYear);
-        // if(
-        //     birthDetails.year > currentYear ||
-        //     (birthDetails.month > currentMonth && 
-        //        birthDetails.year == currentMonth  ) ||
-        //        (birthDetails.date > currentDate &&
-        //         birthDetails.month == currentMonth
-        //                         &&
-        //         birthDetails.year == currentYear)
-        // ){
-        //     alert("Future Date");
-        //     displayResult("-","-","-");
-        //     return;
-        // }
+        if(
+            birthDetails.year > currentYear ||
+            (birthDetails.month > currentMonth && 
+               birthDetails.year == currentYear  ) ||
+               (birthDetails.date > currentDate &&
+                birthDetails.month == currentMonth
+                                &&
+                birthDetails.year == currentYear)
+        ){
+            alert("Future Dates Not Allowed.");
+            displayResult("-","-","-");
+            return;
+        }
 
       birthYear = currentYear - birthDetails.year;
       
