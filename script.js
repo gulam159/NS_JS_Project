@@ -45,7 +45,7 @@ function ageCalculate(){
       }
       else{
           birthMonth--; 
-          let days = months  [currMonth - 2 ];
+          let days = months  [currentMonth - 2 ];
           birthDate = days + currentDate - birthDetails.date;
           if(birthMonth < 0 ){
               birthMonth=11;
@@ -63,7 +63,7 @@ function displayResult(bDate,bMonth,bYear){
 function leapCheck(year){
     if(year % 4 == 0 || (year % 100 == 0 && year % 400 ==0))
     {
-                months[1] = 29 ;
+                months[1] = 29;
         }
         else{
             months[1]=28;
